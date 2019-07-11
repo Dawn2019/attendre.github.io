@@ -17,10 +17,11 @@
 	});
 
 // Events (JS).
-	
+
 	// Remove "loading" class once the page has fully loaded.
 		window.onload = function() {
 			document.body.className = '';
+			document.querySelector("#main").style.display = 'block';
 		}
 
 	// Prevent scrolling on touch.

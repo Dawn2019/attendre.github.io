@@ -25,8 +25,8 @@
 	<body class="loading">
 		<div id="wrapper">
 			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+			<!-- <div id="overlay"></div> -->
+			<div id="main" style="display: none">
 				<!-- Header -->
 					<header id="header">
 						<!--<h1>Dawn</h1>-->
@@ -42,11 +42,19 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy;2019 张严</span>
+						<span class="copyright">&copy;2019&nbsp;张严</span>
 					</footer>
 				
 			</div>
 		</div>
+		<script>
+			rand = Math.floor(Math.random()*99);
+			bg = 'url(http://zhangchenglin.top/css/images/bg'+rand+'.jpg)';
+			if(rand == 0){
+				bg ='url(css/images/bg27.jpg)';
+			}
+			document.getElementById('bg').style.backgroundImage=bg;
+		</script>
 	</body>
 	
 </html>
